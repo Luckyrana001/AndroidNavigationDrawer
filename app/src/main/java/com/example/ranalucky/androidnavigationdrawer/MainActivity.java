@@ -19,7 +19,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.ranalucky.androidnavigationdrawer.R.id.coordinatorLayout;
 
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
     public static FragmentManager fragmentManager;
@@ -33,7 +32,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // initialising the object of the FragmentManager. Here I'm passing getSupportFragmentManager(). You can pass getFragmentManager() if you are coding for Android 3.0 or above.
+        // initialising the object of the FragmentManager. Here I'm passing getSupportFragmentManager().
+        // You can pass getFragmentManager() if you are coding for Android 3.0 or above.
         fragmentManager = getSupportFragmentManager();
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
 
